@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony Music Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #ffdee9, #b5fffc);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Floating Color Blobs */
+.blob{
+    position:fixed;
+    border-radius:50%;
+    filter: blur(80px);
+    opacity:0.5;
+    z-index:-1;
+    animation: move 12s infinite alternate ease-in-out;
+}
+
+.blob1{
+    width:300px;
+    height:300px;
+    background:#ff9a9e;
+    top:10%;
+    left:5%;
+}
+
+.blob2{
+    width:350px;
+    height:350px;
+    background:#a18cd1;
+    bottom:10%;
+    right:5%;
+}
+
+@keyframes move{
+    from{ transform:translateY(0px); }
+    to{ transform:translateY(50px); }
+}
+
+/* Navbar */
+header{
+    padding:20px 0;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ff4e88;
+}
+
+.menu a{
+    text-decoration:none;
+    margin:0 15px;
+    color:#444;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#ff4e88;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    background: linear-gradient(45deg,#ff4e88,#6a5acd);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#555;
+    font-size:18px;
+}
+
+/* Songs Section */
+.songs{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.songs h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:40px;
+    color:#444;
+}
+
+.song-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.song-card{
+    background: rgba(255,255,255,0.6);
+    backdrop-filter:blur(20px);
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.song-card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+.song-card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.song-card h3{
+    margin:15px 0 5px;
+    color:#333;
+}
+
+.song-card p{
+    color:#666;
+    font-size:14px;
+}
+
+/* Register Section */
+.register{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.register-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background: linear-gradient(45deg,#ff4e88,#6a5acd);
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.register-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#555;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<header>
+<nav>
+<div class="logo">🎵 Harmony 🎶</div>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Songs</a>
+<a href="#">Albums</a>
+<a href="#">Contact</a>
+<a href="#">Register</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Feel the Rhythm of Life</h1>
+<p>Discover your favorite songs in a colorful world 🎶</p>
+</section>
+
+<section class="songs">
+<h2>🎧 Popular Songs</h2>
+
+<div class="song-grid">
+
+<div class="song-card">
+<img src="https://spoonuniversity.com/cdn-cgi/image/width=734,height=489.33333333333,fit=cover,format=auto/https://s3.amazonaws.com/secretsaucefiles/photos/images/000/120/955/original/Screen_Shot_2017-01-30_at_7.36.54_PM.png?1485823203">
+<h3>Shape of You</h3>
+<p>Ed Sheeran</p>
+</div>
+
+<div class="song-card">
+<img src="https://articles.roland.com/wp-content/uploads/2021/06/32623628818_211100320a_o-2048x1463.jpg">
+<h3>Levitating</h3>
+<p>Dua Lipa</p>
+</div>
+
+<div class="song-card">
+<img src="https://getwallpapers.com/wallpaper/full/0/0/7/1068867-top-michael-jackson-wallpaper-1920x1200-high-resolution.jpg">
+<h3>Beat It</h3>
+<p>Michael Jackson</p>
+</div>
+
+<div class="song-card">
+<img src="https://c4.wallpaperflare.com/wallpaper/603/16/901/blues-dance-disco-jackson-wallpaper-preview.jpg">
+<h3>Billie Jean</h3>
+<p>Michael Jackson</p>
+</div>
+
+</div>
+</section>
+
+<section class="register">
+<h2>Join Our Music Community 🌈</h2>
+<a href="registration indx.html" class="register-btn">Register Now</a>
+</section>
+
+<footer>
+© 2026 Harmony Music Store | Made with 💖
+</footer>
+
+</body>
+</html>
